@@ -17,6 +17,7 @@ nohup python etc/scripts/pureweight.py > pureweight.log 2>&1 &
 - update MVA WP to V2 :'passingMVA94Xwp90noisoV2 == 1'
 - add in additional cuts to require passing denominator ID
 - update putree file path (search for set_puTree[''])
+- update baseOutDir (This is a relative path. Used in tnpEGM_fitter.py {outputDirectory = '%s/%s/' % (tnpConf.baseOutDir,args.flag)}. The corresponding directory will be created when running --createBins option and plots from --doFit / --sumUp will be stored inside.)
 
 ## Update file paths of input sample (etc/inputs/tnpSampleDef.py)
 
