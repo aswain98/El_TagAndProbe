@@ -12,11 +12,13 @@ export PYTHONPATH=$PYTHONPATH:/afs/cern.ch/user/<u>/<username>/work/TagAndProbe/
 nohup python etc/scripts/pureweight.py > pureweight.log 2>&1 &
 ~~~~
 
-# Update config files
+# Update config files (etc/config/setting_ele_iso.py)
 - include custom WP : 'passingMini==1' 
 - update MVA WP to V2 :'passingMVA94Xwp90noisoV2 == 1'
 - add in additional cuts to require passing denominator ID
 - update putree file path (search for set_puTree[''])
+
+# Update file paths of input sample (etc/inputs/tnpSampleDef.py)
 
 # Run fitting script
 ~~~~
